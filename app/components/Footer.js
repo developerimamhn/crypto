@@ -114,7 +114,7 @@ const Footer = () => {
                         </div>
                         <div className='flex flex-col items-center sm:items-start'>
                             <h3 className='consoitionas'>Emergency accident submission</h3>
-                            <p className='numvering'>1661-5542  <span className='timingsystime'>(24/7/365)</span></p>
+                            <p className='numvering'>1661-5543  <span className='timingsystime'>(24/7/365)</span></p>
                         </div>
                         <div className='flex flex-col items-center sm:items-start'>
                             <h3 className='consoitionas'>Chat consultation</h3>
