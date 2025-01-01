@@ -7,8 +7,7 @@ import Image from 'next/image';
 import { LiaBarsSolid } from "react-icons/lia";
 import { VscChromeClose } from "react-icons/vsc";
 import logo from '../components/image/Frame 5.png';
-import image1 from '../components/image/image1.png';
-import image3 from '../components/image/image3.png';
+
 
 const NavBar = () => {
     const [toggle, setToggle] = useState(false);

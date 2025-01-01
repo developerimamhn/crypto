@@ -461,6 +461,22 @@ body {
   }
 }
 
+@keyframes example{
+  from{
+    translate: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    translate: translateX(0);
+    opacity: 100;
+  }
+}
+
+.animactionnameas{
+  animation-name: example;
+  animation-duration: 1s;
+}
+
 
 /* General styles for the wrapper */
 .custom-select-wrapper {
@@ -528,3 +544,12 @@ select {
 
 
 
+/* .swiper-slide {
+  height: 585px !important;
+  overflow: visible !important;
+}
+
+.swiper {
+  overflow: visible !important;
+}
+ */

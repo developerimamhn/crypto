@@ -14,33 +14,41 @@ import image4 from './image/image 13.png';
 
 const Sliderone = () => {
     return (
-        <div className='relative'>
+        <div className='relative !w-fit'>
       <Swiper  modules={[Pagination]} 
       pagination={{
         el: '.swiper-pagination', 
         clickable: true,      
     }}
       breakpoints={{
-          640: {
+          40: {
             slidesPerView: 1,
+            spaceBetween: 18,
           },
           768: {
             slidesPerView: 2,
             spaceBetween: 25,
           },
           1024: {
-            slidesPerView: 2.8,
+            slidesPerView: 2.4,
             spaceBetween: 32,
           },
         }} 
-         className="mySwiper">
-        <SwiperSlide><Image className='h-[500px] w-[100%]' src={image1} alt=''/></SwiperSlide>
-        <SwiperSlide><Image className='h-[500px] w-[100%]' src={image2} alt=''/></SwiperSlide>
-        <SwiperSlide><Image className='h-[500px] w-[100%]' src={image3} alt=''/></SwiperSlide>
-        <SwiperSlide><Image className='h-[500px] w-[100%]' src={image4} alt=''/></SwiperSlide>
-        <SwiperSlide><Image className='h-[500px] w-[100%]' src={image1} alt=''/></SwiperSlide>
-        <SwiperSlide><Image className='h-[500px] w-[100%]' src={image2} alt=''/></SwiperSlide>
-        <SwiperSlide><Image className='h-[500px] w-[100%]' src={image3} alt=''/></SwiperSlide>
+         className="mySwiper overflow-hidden  !w-fit">
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[585px] w-fit max-w-full object-contain ' src={image1} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[585px] w-full max-w-full object-cover ' src={image2} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[585px] !w-fit  max-w-full object-contain ' src={image3} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[588px] w-full  object-cover ' src={image4} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300]t sm:h-[450px] lg:h-[588px] w-fit  object-contain ' src={image1} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[588px] w-full  object-cover ' src={image2} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[588px] !w-fit  object-contain ' src={image3} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[585px] w-fit max-w-full object-contain ' src={image1} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[585px] w-full max-w-full object-cover ' src={image2} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[585px] !w-fit  max-w-full object-contain ' src={image3} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[588px] w-full  object-cover ' src={image4} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[588px] w-fit  object-contain ' src={image1} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[588px] w-full  object-cover ' src={image2} alt=''/></SwiperSlide>
+        <SwiperSlide className='!w-fit'><Image className='h-[300] sm:h-[450px] lg:h-[588px] !w-fit  object-contain ' src={image3} alt=''/></SwiperSlide>
       </Swiper>
       <div class="swiper-pagination"></div>
     </div>

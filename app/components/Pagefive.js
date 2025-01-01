@@ -6,11 +6,11 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Pagefive = () => {
     return (
-        <div className='relative'>
-            <div className="">
+        <div className='relative inline'>
+            <div className="inline">
             <TypeAnimation
                 sequence={[
-                    'CRYPTO PARTNER',
+                    ' PARTNER',
                     1000,
                     '',
                     3000
