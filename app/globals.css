@@ -51,7 +51,7 @@ body {
 
 @layer components{
   .Link-manu-bar{
-    @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[22px] 2xl:text-[26px]
+    @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[22px] 2xl:text-[24px]
   }
   .Link-manu-bars {
     @apply w-[35px] sm:w-[40px] md:w-[45px] lg:w-[50px] xl:w-[55px] 2xl:w-[61px] h-[35px] sm:h-[40px] md:h-[45px] lg:h-[50px] xl:h-[55px] 2xl:h-[61px];
@@ -151,6 +151,18 @@ body {
   }
   .numvering{
     @apply text-[13px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] 2xl:text-[24px] mt-[13px] sm:mt-[15px] md:mt-[16px] lg:mt-[18px] xl:mt-[20px] 2xl:mt-[24px]
+  }
+  .Marketbtn{
+    @apply text-[14px] sm:text-[20px] md:text-[25px] lg:text-[30px] xl:text-[35px] 2xl:text-[40px] py-[14px] sm:py-[20px] md:py-[22px] lg:py-[24px] xl:py-[28px] 2xl:py-[32px]  px-[16px] sm:px-[27px] md:px-[32px] lg:px-[38px] xl:px-[43px] 2xl:px-[48px]
+  }
+  .imagesiges li{
+    @apply text-[13px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[18px] 2xl:text-[22px] 3xl:text-[24px] py-[10px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[18px] 2xl:py-[20px] 3xl:py-[24px]  px-[12px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[28px] 3xl:px-[32px] hover:bg-[#231E1D] duration-300 hover:text-[#ffffffcc] text-[#000000cc]
+  }
+  .inputclassing{
+    @apply p-[13px] sm:p-[14px] md:p-[15px] lg:p-[16px] xl:p-[18px] 2xl:p-[20px]
+  }
+  .inputstyling{
+    @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[18px] 2xl:text-[22px] 3xl:text-[24px]
   }
 }
 
@@ -459,6 +471,74 @@ body {
   .marketfooter{
     background: linear-gradient(276deg, #EB2900 0.22%, #FF4923 100%);
   }
+  .Marketbtn {
+    position: relative;
+    margin-bottom: 32px;
+    color: #000;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Theinhardt";
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -1.6px;
+  }
+  .Marketbtn.focused{
+    font-weight: 500;
+  }
+  .Marketbtn::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    transition: width 200ms ease-in-out, opacity 200ms ease-in-out;
+    opacity: 0;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .Marketbtn::after {
+      height: 2px;
+    }
+  }
+  
+  .Marketbtn.focused::after {
+    width: 100%;
+    opacity: 100;
+  }
+
+  .imagesiges li{
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Theinhardt";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.96px;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+  }
+  .inputclassing{
+    border: 2px solid rgba(0, 0, 0, 0.10);
+  }
+  .inputstyling{
+    color: rgba(35, 30, 29, 0.70);
+    text-align: left;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Theinhardt";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.96px;
+    outline: none;
+    padding-left: 12px;
+  }
+  
 }
 
 @keyframes example{
@@ -543,13 +623,14 @@ select {
 }
 
 
-
-/* .swiper-slide {
-  height: 585px !important;
-  overflow: visible !important;
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.swiper {
-  overflow: visible !important;
+* {
+  box-sizing: inherit;
 }
- */

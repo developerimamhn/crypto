@@ -12,7 +12,7 @@ const HeroArea = () => {
         <div>
             <div className='container mx-auto pb-[50px] sm:pb-[70px] lg:pb-[90px] xl:pb-[110px] 2xl:pb-[132px] px-[24px] sm:px-0'>
                 <div className='flex justify-center  items-center'>
-                <Image className='' src={image12} alt='Loading...'/>
+                <Image className='2xl:w-[75%] 3xl:w-[55%]' src={image12} alt='Loading...'/>
                 </div>
                 <div className='flex justify-start items-center flex-col sm:flex-row gap-[15px] sm:gap-[8px] lg:gap-[13px]'>
                     <h2 className='leadingbols animactionnameas'>LEADING GLOBAL</h2><p className='trustedcrypto sm:text-left text-center'>We Build a Trusted and <br/> Transparent Crypto Platform.</p>
